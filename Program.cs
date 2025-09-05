@@ -12,6 +12,9 @@ namespace SecretCode_syla
         static void Main(string[] args)
         {
             int levelGame =1; // stock le niveau choisi par l'utilisaeur par défaut (1) débutant
+            int nombreEssais = 0; // stock le nombre d'essais
+
+            
 
             const int RANDOM_VALUE = 1234;
 
@@ -103,27 +106,40 @@ namespace SecretCode_syla
             {
                 case 1:
                     Console.WriteLine("Essais : ");
+                    while (nombreEssais < 10)
+                    {
+                        nombreEssais++;
+                    }
 
-                    
-                    
+
                     break;
 
                 case 2:
-                    Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
-
+                    Console.WriteLine("Essais : ");
+                    while (nombreEssais < 10)
+                    {
+                        nombreEssais++;
+                    }
 
 
                     break;
 
                 case 3:
-                    Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
-
+                    Console.WriteLine("Essais : ");
+                    while (nombreEssais < 10)
+                    {
+                        Console.WriteLine("test : {0}", nombreEssais);
+                        nombreEssais++;
+                    }
 
 
                     break;
                 case 4:
-                    Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
-
+                    Console.WriteLine("Essais : ");
+                    while (nombreEssais < 10)
+                    {
+                        nombreEssais++;
+                    }
 
 
                     break;
