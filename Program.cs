@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Activation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,9 @@ namespace SecretCode_syla
     {
         static void Main(string[] args)
         {
+            int levelGame =1; // stock le niveau choisi par l'utilisaeur par défaut (1) débutant
+
+            const int RANDOM_VALUE = 1234;
 
             Console.WriteLine("╔════════════════════ Dionit Syla ════════════════════╗");
             Console.WriteLine("║                                                     ║");
@@ -89,17 +93,48 @@ namespace SecretCode_syla
 
             Console.Write("Votre choix (1-4) : ");
 
+            levelGame = Convert.ToInt32(Console.ReadLine());
+
+            Console.Clear();
+            Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
+            Console.WriteLine(" ");
+
+            switch (levelGame)
+            {
+                case 1:
+                    Console.WriteLine("Essais : ");
+
+                    
+                    
+                    break;
+
+                case 2:
+                    Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
+
+
+
+                    break;
+
+                case 3:
+                    Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
+
+
+
+                    break;
+                case 4:
+                    Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
+
+
+
+                    break;
+            }
 
 
 
 
 
 
-
-
-
-
-            Console.Read();
+                Console.Read();
         }
     }
 }
