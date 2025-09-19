@@ -16,7 +16,6 @@ namespace SecretCode_syla
 
             
 
-            const int RANDOM_VALUE = 1234;
 
             Console.WriteLine("╔════════════════════ Dionit Syla ════════════════════╗");
             Console.WriteLine("║                                                     ║");
@@ -102,6 +101,26 @@ namespace SecretCode_syla
             Console.WriteLine("=== SECRET CODE Niveau {0} ===", levelGame);
             Console.WriteLine(" ");
 
+
+            Random random = new Random();
+            List<int> chiffres = new List<int>();
+
+            chiffres.Add("1");
+            chiffres.Add("2");
+            chiffres.Add("3");
+            chiffres.Add("4");
+            chiffres.Add("5");
+            chiffres.Add("6");
+
+            for (int i = 0; i < 4; i++)
+            {
+                int chiffre = random.Next(10);
+                chiffres.Add(chiffre);
+                Console.Write(chiffre);
+            }
+
+
+
             switch (levelGame)
             {
                 case 1:
@@ -145,12 +164,7 @@ namespace SecretCode_syla
                     break;
             }
 
-
-
-
-
-
-                Console.Read();
+            Console.Read();
         }
     }
 }
